@@ -27,6 +27,7 @@ var functions = {
 
         blobStream.on('error', (err) => {
             console.error(err);
+            //res.status(500).send(err.code);
             res.status(500).send('Something went wrong.');
         });
 
